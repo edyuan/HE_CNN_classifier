@@ -1,5 +1,8 @@
 # CNN for Classification of Breast Cancer Histology Images
 * built using Korsuk's HE Cell Seg Framework
+* classifies Patch Images into an arbitrary number of classes
+  * add classes using flags['n_classes']
+  * class labels are encoded by adding prefix 'classnumber_' to file names. for example, for a class 1 image: '1_01_420_2_5_24.png'
 * add folders with image data to:
   * Data/FolderName
   * add corresponding flag in flags['dict_path'] and flags['dict_ext']
